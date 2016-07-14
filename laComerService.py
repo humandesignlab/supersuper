@@ -3,7 +3,7 @@
 import urllib2
 import json
 import pandas as pd
-
+# TODO: scroll programatically with selenium to load every item: http://stackoverflow.com/questions/21006940/how-to-load-all-entries-in-an-infinite-scroll-at-once-to-parse-the-html-in-pytho
 productNames = []
 allPrices = []
 searchQuery = 'leche alpura'
