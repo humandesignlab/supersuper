@@ -9,17 +9,15 @@ allPrices = []
 searchQuery = 'leche alpura'
 req = urllib2.Request("http://www.lacomer.com.mx/GSAServices/searchArt?col=lacomer_2&orden=-1&p=1&pasilloId=false&s="+searchQuery+"&succId=14")
 req1 = urllib2.Request("http://www.lacomer.com.mx/GSAServices/searchArt?col=lacomer_2&orden=-1&p=2&pasilloId=false&s=leche&succId=14")
-req2 = urllib2.Request("http://www.lacomer.com.mx/GSAServices/searchArt?col=lacomer_2&orden=-1&p=45&pasilloId=false&s=leche&succId=14")
 
 opener = urllib2.build_opener()
-f = opener.open(req2)
+f = opener.open(req)
 json = json.loads(f.read())
 
-for articulo in json['res']:
-	productNames.append(articulo['artDes'])
-	allPrices.append(articulo['artPrven'])
+print 'number of pages: ', json['numpages']
 
-df = pd.DataFrame(productNames, columns=['Producto'])
-df['Precio']=allPrices
-
-print df
+for page in range(0,json['numpages']):
+	print page
+	data = opener.open("http://www.lacomer.com.mx/GSAServices/searchArt?col=lacomer_2&orden=-1&p="+str(page)+"&pasilloId=false&s="+searchQuery+"&succId=14")
+	completeJson = data.read()
+	print completeJson
