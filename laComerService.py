@@ -3,23 +3,43 @@
 import urllib2
 import json
 import pandas as pd
-# TODO: scroll programatically with selenium to load every item: http://stackoverflow.com/questions/21006940/how-to-load-all-entries-in-an-infinite-scroll-at-once-to-parse-the-html-in-pytho
+
 productNames = []
+brandNames = []
 allPrices = []
 searchQuery = 'leche alpura'
 req = urllib2.Request("http://www.lacomer.com.mx/GSAServices/searchArt?col=lacomer_2&orden=-1&p=1&pasilloId=false&s="+searchQuery+"&succId=14")
-req1 = urllib2.Request("http://www.lacomer.com.mx/GSAServices/searchArt?col=lacomer_2&orden=-1&p=2&pasilloId=false&s=leche&succId=14")
-req2 = urllib2.Request("http://www.lacomer.com.mx/GSAServices/searchArt?col=lacomer_2&orden=-1&p=45&pasilloId=false&s=leche&succId=14")
 
 opener = urllib2.build_opener()
-f = opener.open(req2)
-json = json.loads(f.read())
-print type(json)
-for articulo in json['res']:
-	productNames.append(articulo['artDes'])
-	allPrices.append(articulo['artPrven'])
+f = opener.open(req)
+json1 = json.loads(f.read())
 
-df = pd.DataFrame(productNames, columns=['Producto'])
-df['Precio']=allPrices
+print 'number of pages: ', json1['numpages']
+print 'number of products: ', json1['total']
+
+for page in range(0,json1['numpages']):
+	data = opener.open("http://www.lacomer.com.mx/GSAServices/searchArt?col=lacomer_2&orden=-1&p="+str(page)+"&pasilloId=false&s="+searchQuery+"&succId=14")
+	completeJson = json.loads(data.read())
+	#print page, completeJson['res']
+
+	names = [lin['artDes'] for lin in completeJson['res']]
+	productNames.append(names)
+
+	brand = [lin['marDes'] for lin in completeJson['res']]
+	brandNames.append(brand)
+
+	prices = [lip['artPrven'] for lip in completeJson['res']]
+	allPrices.append(prices)
+
+productNamesList  = sum(productNames, [])
+allPricesList = sum(allPrices, [])
+brandNamesList = sum(brandNames, [])	
+
+df = pd.DataFrame(productNamesList, columns=['Producto'])
+df['Marca']=brandNamesList
+df['Precio']=allPricesList
 
 print df
+
+
+

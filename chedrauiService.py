@@ -2,13 +2,15 @@
 # -*- coding: utf-8 -*-
 import os, sys
 from bs4 import BeautifulSoup
+import lxml
+import lxml.etree
 import urllib2
 from cookielib import CookieJar
 import pandas as pd
 
 chedrauiUrl = 'http://www.chedraui.com.mx/index.php/interlomas/catalogsearch/result/?cat=0&q='
 
-searchQuery = 'leche'
+searchQuery = 'leche%20alpura'
 productNames = []
 allPrices = []
 
