@@ -14,7 +14,7 @@ req2 = urllib2.Request("http://www.lacomer.com.mx/GSAServices/searchArt?col=laco
 opener = urllib2.build_opener()
 f = opener.open(req2)
 json = json.loads(f.read())
-
+print type(json)
 for articulo in json['res']:
 	productNames.append(articulo['artDes'])
 	allPrices.append(articulo['artPrven'])

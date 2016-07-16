@@ -12,12 +12,12 @@ req1 = urllib2.Request("http://www.lacomer.com.mx/GSAServices/searchArt?col=laco
 
 opener = urllib2.build_opener()
 f = opener.open(req)
-json = json.loads(f.read())
+json1 = json.loads(f.read())
 
-print 'number of pages: ', json['numpages']
+print 'number of pages: ', json1['numpages']
 
-for page in range(0,json['numpages']):
+for page in range(0,json1['numpages']):
 	print page
 	data = opener.open("http://www.lacomer.com.mx/GSAServices/searchArt?col=lacomer_2&orden=-1&p="+str(page)+"&pasilloId=false&s="+searchQuery+"&succId=14")
-	completeJson = data.read()
-	print completeJson
+	completeJson = json.loads(data.read())
+	print completeJson['res']
