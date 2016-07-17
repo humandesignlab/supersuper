@@ -40,6 +40,7 @@ df['Marca']=brandNamesList
 df['Precio']=allPricesList
 
 print df
+df.to_csv('searches/outlacomer.csv', encoding='utf-8')
 
 
 

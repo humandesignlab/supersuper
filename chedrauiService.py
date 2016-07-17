@@ -36,10 +36,8 @@ for price in chedraui_prices:
 	allPrices.append(prices[-1].find(text=True).strip())
 print "Total de precios: ", len(allPrices)
 
-
-
-
 df = pd.DataFrame(productNames, columns=['Producto'])
 df['Precio']=allPrices
 
 print df
+df.to_csv('searches/outchedraui.csv', encoding='utf-8')
