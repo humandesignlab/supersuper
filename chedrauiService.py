@@ -10,30 +10,29 @@ import pandas as pd
 
 chedrauiUrl = 'http://www.chedraui.com.mx/index.php/interlomas/catalogsearch/result/?cat=0&q='
 
-searchQuery = 'leche%20alpura'
+searchTerm = 'leche'
 productNames = []
 allPrices = []
-
-def theSoup(searchUrl, searchTerm):
-	cj = CookieJar()
+cj = CookieJar()
+for page in range(1,6):
 	opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj))
-	p = opener.open(searchUrl + searchTerm)
+	p = opener.open('http://www.chedraui.com.mx/index.php/interlomas/catalogsearch/result/?cat=0&p=' + str(page) + '&q=' + searchTerm)
 	mySoup = BeautifulSoup(p, "lxml")
-	return mySoup
 
 
-chedrauiSoup = theSoup(chedrauiUrl, searchQuery)
+	chedraui_products = mySoup.find_all('div', class_='f-fix')
+	for name in chedraui_products:
+		names = name.find_all('a', class_='name-product')
+		productNames.append(names[0].find(text=True).strip())
 
-chedraui_products = chedrauiSoup.find_all('div', class_='f-fix')
-for name in chedraui_products:
-	names = name.find_all('a', class_='name-product')
-	productNames.append(names[0].find(text=True).strip())
+	chedraui_prices = mySoup.find_all('div', class_='price-box')
+	for price in chedraui_prices:
+		prices = price.find_all('span', class_='price')
+		allPrices.append(prices[-1].find(text=True).strip())
+
+	print "Retreived data from page: " + str(page)
+
 print "Total de productos: ", len(productNames)
-
-chedraui_prices = chedrauiSoup.find_all('div', class_='price-box')
-for price in chedraui_prices:
-	prices = price.find_all('span', class_='price')
-	allPrices.append(prices[-1].find(text=True).strip())
 print "Total de precios: ", len(allPrices)
 
 df = pd.DataFrame(productNames, columns=['Producto'])

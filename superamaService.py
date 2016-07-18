@@ -13,7 +13,7 @@ def HTMLEntitiesToUnicode(text):
 productNames = []
 brandNames = []
 allPrices = []
-searchQuery = 'leche+alpura'
+searchQuery = 'mango'
 req = urllib2.Request("http://www.superama.com.mx/buscador/resultado?busqueda="+searchQuery)
 
 opener = urllib2.build_opener()

@@ -1,25 +1,118 @@
 ,Producto,Precio
-0,"Leche Alpura 250 ml, Fresa",$7.20
-1,"Leche Alpura 250 ml, Vainilla",$7.20
-2,"Leche Alpura 250 ml, Chocolate",$7.20
-3,Leche Alpura Entera Ultrapast 1 Lt,$16.00
-4,Leche Alpura Semi Ultrapas 1 Lt,$16.00
-5,"Leche Alpura 250 ml, Descremada",$6.00
-6,"Leche Alpura 250 ml, Semi descremada",$6.00
-7,Leche Alpura Light Deslactosada 1 Lt,$17.50
-8,Leche Alpura Pasteurizada Light 1 Lt,$15.10
-9,Leche Alpura Deslac Chocolate 250 Ml,$7.20
-10,Leche Alpura Deslactosada 250 Ml,$6.50
-11,Leche Alpura Selecta Entera 1 Lt,$17.00
-12,Leche Alpura Fresa Frutal 250 Ml,$6.30
-13,Leche Alpura Durazno Frutal 250 Ml,$6.30
-14,Leche Alpura Piña Coco Frutal 250 Ml,$6.30
-15,Leche Alpura Dbt Especializada 1 Lt,$20.40
-16,Leche Alpura Guanabana Frutal 250 Ml,$6.30
-17,Leche Alpura Fre Frutal Deslactosad 250,$6.90
-18,Leche Alpura Fre Frutal Deslacto 1 Lt,$17.80
-19,Leche Alpura Semi 1 Lt,$15.10
-20,Leche Alpura Pasteur Entera 1 Lt,$15.10
-21,Leche Alpura Pasteur Entera 1.89 Lt,$28.70
-22,Leche Alpura Pasteur Entera 3.78 Lt,$56.00
-23,Leche Alpura Deslactosada 1 Lt,$17.50
+0,"Sab Leche Turin 150 gr, Chocolate leche",$40.00
+1,Leche Saborizada Lala Café Con Leche 1 L,$22.50
+2,Leche Lala Café CLech SAzuc Uht 1 Lt,$22.50
+3,Arroz C Leche Lala 4 Pack 500 Gr,$16.00
+4,Gelatina Danette Leche Cajeta 100 Gr,$4.50
+5,Shampoo Organix 13Oz385Ml Leche De Coco,$75.00
+6,Acond Organix 13Oz385Ml Leche De Coco,$75.00
+7,Tratcap Nutritivo Leche De Coco 118Ml,$109.00
+8,Rol Tres Leches,$7.00
+9,Pastel CheeseCake Dulce De Leche,$195.00
+10,Leche Fresca Con Chocolate Baja En Grasa,$50.90
+11,"Helado Haagen Dazs 473 ml, Dulce leche",$97.00
+12,"Helado Haagen Dazs 946 ml, Dulce leche",$179.00
+13,Leche Organica Alm-Vain Full Circle 946,$39.90
+14,Bolsa Lindor Chocolate con Leche 144 g,$67.00
+15,"Jabon Liq Grisi 450ml, Leche de Burra",$25.90
+16,Crema Baileys Dulce De Leche 750 Ml,$219.00
+17,Leche Natura Tamariz Entera 1 Lt,$14.50
+18,Leche Sab Tamariz Chocolate 1 Lt,$16.65
+19,Leche De Soya Light Silk 64Oz,$75.00
+20,Leche Parmalat Entera Ultrapast 1 Lt,$14.20
+21,Leche Parmalat Semidescremada 1 Lt,$14.20
+22,Leche Parmalat Light Ultrapast 1 Lt,$14.20
+23,Leche Parmalat Deslactosad semidescr 1lt,$15.40
+24,"Leche Parmalat 1 lt, Deslactosada",$15.40
+25,Sm Polvo Para Choc C Leche Caliente 20Gr,$59.00
+26,"Gelatina D Gari 140 gr, Fresa Leche",$9.00
+27,Cajeta La Nantesana De Leche De Vaca Kg,$72.00
+28,"Leche Nesquik 240 ml, Chocolate",$7.90
+29,"Leche Alpura 250 ml, Fresa",$7.20
+30,"Leche Alpura 250 ml, Vainilla",$7.20
+31,"Leche Alpura 250 ml, Chocolate",$7.20
+32,"Leche Nesquik 240 ml, Fresa",$7.90
+33,Leche Evaporada Nestlé Carnation Light 3,$14.00
+34,Leche Evaporada Nestlé Carnation Deslact,$14.10
+35,Dulce De Leche Lechera 380 Gr,$29.60
+36,"Sab Leche Maizena 47 gr, Nuez",$5.90
+37,Saborizante Leche Maizena Regular 425 Gr,$26.00
+38,Saborizante Leche Maizena Regular 750 Gr,$43.00
+39,"Sab Leche Turin 150 gr, Chocolate amargo",$40.00
+40,"Sab Leche Turin 1, Chocolate semi amargo",$40.00
+41,Leche Lala Pasteurizada Light 1 Gal,$52.90
+42,Leche Lala Fresca Light 1 Lt,$14.50
+43,Leche Lala Semi Ultra Pasteurizada 1Lt,$15.70
+44,Leche Lala Entera Ultrapast 1 Lt,$15.70
+45,Leche Lala Light Ultrapasteurizad 1 Lt,$15.20
+46,"Leche Lala 1 lt, Semi Deslactosada",$17.00
+47,"Leche Yomilala 1 lt, Chocolate",$19.00
+48,"Leche Yomilala 1 lt, Fresa",$19.00
+49,"Leche Yomilala 1 lt, Vainilla",$19.00
+50,"Leche Lala 1 lt, Deslactosada light",$17.00
+51,Arroz C Leche Lala Natural 125 Gr,$4.20
+52,Leche Lala Uht Light Extra Calcio 1 Lt,$17.20
+53,Leche Lala Siluette Deslac Ultra 1 Lt,$16.20
+54,Leche Uht Deslactosada Semi Lala 6 Pack,$91.00
+55,Leche Uht Deslactosada Light Lala 6 Pack,$91.00
+56,Leche Sab Lala 3 Pack Chocolate 250 Ml,$19.50
+57,Leche Evaporada Lala 250 Ml,$9.75
+58,Leche Borden Uht Light 1 Lt,$16.50
+59,Leche Borden Uht Deslactosada 1 Lt,$18.20
+60,Leche Lala Fresa Saborizada 1 Lt,$17.00
+61,Leche Lala Mango Saborizada 1 Lt,$17.00
+62,Leche Borden Entera Uht 1 Lt,$16.50
+63,Leche Lala Fresa Saborizada 250 Ml,$6.25
+64,Leche Lala Entera Café 250 Ml,$10.90
+65,Leche Borden Chocolate 1 Lt,$25.50
+66,Leche Lala Café Cappuccino Vainilla 1 Lt,$22.50
+67,Leche Lala Deslactosada Light 250 Ml,$6.50
+68,"Jabon Tocador Grisi 125g, Leche de burra",$17.40
+69,"Saborizante Leche Slim Fast, Chocolate",$149.00
+70,"Saborizante Leche Slim Fast, Fresa",$149.00
+71,"Choco Hershey 38 gr, Leche",$10.00
+72,"Choco Hershey 40 gr, Leche",$36.00
+73,Choco Hersh Kisses Lech Estuch 6 Pz 80Gr,$39.50
+74,Leche Hersheys Napolitano Saboriz 200 Ml,$7.40
+75,"Leche Hershey 200 ml, Chocolate",$7.40
+76,"Leche Hershey 200 ml, Fresa",$7.40
+77,"Leche Hershey 200 ml, Cookies an",$7.40
+78,Leche Hersheys Chocol Deslactosada 200Ml,$7.80
+79,Leche Hersheys Tripack Chocolate 200 Ml,$21.50
+80,Leche Santa Clara Deslactosada Light 1 L,$18.00
+81,Leche Alpura Entera Ultrapast 1 Lt,$16.00
+82,Leche Alpura Semi Ultrapas 1 Lt,$16.00
+83,"Leche Sab Alpura 1 lt, Chocolate",$21.00
+84,"Leche Sab Alpura 1 lt, Fresa",$21.00
+85,"Leche Sab Alpura 1 lt, Vainilla",$21.00
+86,Leche Alpura Light Ultrapast 1 Lt,$16.00
+87,Leche En Polvo Alpura Entera 500 Gr,$52.00
+88,Mezcla De Leche Fortileche C Grasa Veg,$43.50
+89,Mezcla Lech CGrasa Alpur Sin Colesterol,$17.50
+90,"Leche Alpura 250 ml, Descremada",$6.00
+91,Leche Alpura Light Ultrapast 250 Ml,$6.00
+92,"Leche Alpura 250 ml, Semi descremada",$6.00
+93,Leche En Polvo Alpura Entera 1.8 Kg,$169.00
+94,Mezcla Leche CGras Veget Fortileche 1 L,$12.40
+95,Leche Alpura Light Deslactosada 1 Lt,$17.50
+96,Leche Alpura Pasteurizada Light 1 Lt,$15.10
+97,Leche Alpura Deslac Chocolate 250 Ml,$7.20
+98,Leche Polvo Alpura Deslactosada 480 Gr,$57.50
+99,Leche Alpura Deslactosada 250 Ml,$6.50
+100,Leche Alpura Selecta Entera 1 Lt,$17.00
+101,Leche Alpura Ultrap Deslaclight 250 Ml,$6.50
+102,Leche Polvo Alpura Entera 240 Gr,$22.30
+103,Leche Alpura Fresa Frutal 250 Ml,$6.30
+104,Leche Alpura Durazno Frutal 250 Ml,$6.30
+105,Leche Alpura Piña Coco Frutal 250 Ml,$6.30
+106,Leche Alpura Dbt Especializada 1 Lt,$20.40
+107,Leche Alpura Guanabana Frutal 250 Ml,$6.30
+108,Leche Alpura Fre Frutal Deslactosad 250,$6.90
+109,Leche Alpura Fre Frutal Deslacto 1 Lt,$17.80
+110,Leche Evaporada Nestlé Carnation Entera,$12.00
+111,Leche Condensada Lechera Chiquit 100Gr,$7.50
+112,Saborizante Leche Nestle Choco 400 Gr,$30.00
+113,Chocolate Lindt Classic Recipe Leche Bar,$61.00
+114,Leche Tamariz Semidescremada 1 Lt,$14.50
+115,Leche Lala Mango Saborizada 250 Ml,$6.25
+116,Leche Alpura Deslactosada 1 Lt,$17.50
