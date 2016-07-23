@@ -10,13 +10,14 @@ import pandas as pd
 
 chedrauiUrl = 'http://www.chedraui.com.mx/index.php/interlomas/catalogsearch/result/?cat=0&q='
 
-searchTerm = 'leche'
+searchTerm = 'leche lala'
+searchQuery = searchTerm.replace(" ", "+")
 productNames = []
 allPrices = []
 cj = CookieJar()
 for page in range(1,6):
 	opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj))
-	p = opener.open('http://www.chedraui.com.mx/index.php/interlomas/catalogsearch/result/?cat=0&p=' + str(page) + '&q=' + searchTerm)
+	p = opener.open('http://www.chedraui.com.mx/index.php/interlomas/catalogsearch/result/?cat=0&p=' + str(page) + '&q=' + searchQuery)
 	mySoup = BeautifulSoup(p, "lxml")
 
 
