@@ -8,7 +8,7 @@ productNames = []
 presentation = []
 brandNames = []
 allPrices = []
-searchQuery = 'pechuga pavo bernina'
+searchQuery = 'jamón serrano'
 req = urllib2.Request("http://www.lacomer.com.mx/GSAServices/searchArt?col=lacomer_2&orden=-1&p=1&pasilloId=false&s="+searchQuery+"&succId=14")
 
 opener = urllib2.build_opener()

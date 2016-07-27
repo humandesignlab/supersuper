@@ -10,7 +10,7 @@ import pandas as pd
 
 #chedrauiUrl = 'http://www.chedraui.com.mx/index.php/interlomas/catalogsearch/result/?cat=0&q='
 
-searchTerm = 'pechuga pavo bernina'
+searchTerm = 'jamón serrano'
 searchQuery = searchTerm.replace(" ", "+")
 productNames = []
 allPrices = []
