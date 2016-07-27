@@ -8,18 +8,30 @@ import urllib2
 from cookielib import CookieJar
 import pandas as pd
 
-chedrauiUrl = 'http://www.chedraui.com.mx/index.php/interlomas/catalogsearch/result/?cat=0&q='
+#chedrauiUrl = 'http://www.chedraui.com.mx/index.php/interlomas/catalogsearch/result/?cat=0&q='
 
 searchTerm = 'pechuga pavo bernina'
 searchQuery = searchTerm.replace(" ", "+")
 productNames = []
 allPrices = []
 cj = CookieJar()
-for page in range(1,6):
+
+preOpener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj))
+prep = preOpener.open('http://www.chedraui.com.mx/index.php/interlomas/catalogsearch/result/?cat=0&p=1&q=' + searchQuery)
+preSoup = BeautifulSoup(prep, "lxml")
+pagerTotal = preSoup.find('div', class_='pager')
+children = pagerTotal.find_all("li")
+
+if len(children) == 0:
+	pages = len(children) +2
+else:
+	pages = len(children)
+
+#print pages
+for page in range(1,pages):
 	opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj))
 	p = opener.open('http://www.chedraui.com.mx/index.php/interlomas/catalogsearch/result/?cat=0&p=' + str(page) + '&q=' + searchQuery)
 	mySoup = BeautifulSoup(p, "lxml")
-
 
 	chedraui_products = mySoup.find_all('div', class_='f-fix')
 	for name in chedraui_products:
