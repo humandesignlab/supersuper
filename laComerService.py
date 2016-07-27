@@ -5,9 +5,10 @@ import json
 import pandas as pd
 
 productNames = []
+presentation = []
 brandNames = []
 allPrices = []
-searchQuery = 'leche lala'
+searchQuery = 'pechuga pavo bernina'
 req = urllib2.Request("http://www.lacomer.com.mx/GSAServices/searchArt?col=lacomer_2&orden=-1&p=1&pasilloId=false&s="+searchQuery+"&succId=14")
 
 opener = urllib2.build_opener()
@@ -25,6 +26,9 @@ for page in range(0,json1['numpages']):
 	names = [lin['artDes'] for lin in completeJson['res']]
 	productNames.append(names)
 
+	pres = [lin['artPres'] for lin in completeJson['res']]
+	presentation.append(pres)
+
 	brand = [lin['marDes'] for lin in completeJson['res']]
 	brandNames.append(brand)
 
@@ -32,10 +36,13 @@ for page in range(0,json1['numpages']):
 	allPrices.append(prices)
 
 productNamesList  = sum(productNames, [])
+presentationList = sum(presentation, [])
 allPricesList = sum(allPrices, [])
 brandNamesList = sum(brandNames, [])	
 
-df = pd.DataFrame(productNamesList, columns=['Producto'])
+df = pd.DataFrame()
+df['Producto'] = productNamesList
+df['Presentación']=presentationList
 df['Marca']=brandNamesList
 df['Precio']=allPricesList
 
