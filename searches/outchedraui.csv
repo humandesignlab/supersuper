@@ -1,15 +1,117 @@
 ,Producto,Precio
-0,Leche Lala Deslactosada Light 250 Ml,6.50
-1,Leche Lala Deslactosada 250 Ml,6.50
-2,Leche Lala Deslactosada 1 Lt,16.50
-3,Leche Saborizada Lala Café Con Leche 1 L,22.50
-4,Leche Lala Entera Café 250 Ml,10.90
-5,"Leche Lala 1 lt, Semi Deslactosada",16.00
-6,"Leche Lala 1 lt, Deslactosada light",16.00
-7,Leche Uht Deslactosada Semi Lala 6 Pack,91.00
-8,Leche Uht Deslactosada Light Lala 6 Pack,91.00
-9,Leche Lala Fsa Saborizada Deslactosada 1,18.00
-10,Leche Lala Extra Calcio Deslactosada Sem,17.20
-11,Leche Lala Fibra Deslactosada Semdescr 9,17.20
-12,Leche Lala Siluette Deslac Ultra 1 Lt,16.20
-13,Leche Lala Siluette Plus Deslact 960 ml,17.20
+0,Vino Tinto Copa De Vino Merlot Chi 187 M,55.00
+1,"Vino Tinto Mision Tinto, Sto Tomás 750 M",97.00
+2,Vino Tinto Copa De Vino Cabernet Sauvign,55.00
+3,Vino Tinto Conn Club Sauvignon 750Ml,113.00
+4,Vino Tinto J.P. Chenet Cabernet Syrah Fr,39.00
+5,Vino Tinto Connaisseurs Syrah 750Ml,113.00
+6,Vino Tinto Rheinhessen Blue Rhin Dornfel,155.00
+7,Vino Tinto Sto Tomás Merlot Varietal 750,262.00
+8,Vino Tinto Bacco Lambrusco Mex 750 Ml.,109.00
+9,Vino Tinto Chauvenet 750Ml,59.00
+10,Vino Tinto La Cetto Cabernet Suavignon,105.00
+11,Vino Tinto La Cetto Petit Strah 750,105.00
+12,Vino Tinto La Cetto Nebbiolo Mexico 750,200.00
+13,Vino Tinto L.A. Cetto Merlt Mex 750 Ml.,105.00
+14,Vino Tinto California Chauvenet Mexico,216.00
+15,Vino Tinto Baron De Castilla Esp 750 Ml,75.00
+16,Vino Tinto Seigneur Arnaud,80.00
+17,Vino Tinto Le Champ De Mal,80.00
+18,Vino Tinto Norte 32 Cabernet Sauvignon,414.00
+19,Vino Tinto Dada 1 Aroma A Vainilla Arg 7,191.00
+20,Vino Tinto Dada 2 Aroma A Mokka Arg 750,191.00
+21,Vino Tinto Dada 3 Dada 3 Arg 750 Ml,191.00
+22,Vino Tinto Mi Terruño Expressión Malb Ar,199.00
+23,Vino Tinto Undurraga Caber Ch 750 Ml,139.00
+24,Vino Tinto Casillero Del Diablo Devils C,210.00
+25,Vino Tinto Crimson Cabernet Sauvignon Es,235.00
+26,Vino Tinto Crimson Pinot Noir Estados Un,235.00
+27,Vino Tinto Peñamonte Cosecha Esp 750 Ml,149.00
+28,Vino Tinto Torres Ibericos Rioja Esp 750,179.00
+29,Vino Tinto Pata Negra Valdepeñas Crianza,83.35
+30,"Vino Tinto Canals & Nubiola Tempranillo,",169.00
+31,Vino Tinto Cvne Crianza España 750 Ml,185.00
+32,Vino Tinto Cvne Crianza España 355 Ml,115.00
+33,Vino Tinto Ramon Bilbao Crianza 750Ml,239.00
+34,Vino Tinto Protos Crianza 07 750Ml,429.00
+35,Vino Tinto Protos Roble 750Ml,245.00
+36,Vino Tinto Enate Crianza 750Ml,299.00
+37,Vino Tinto Enate Cabernet 750Ml,250.00
+38,Vino Tinto Alube Tempranillo Esp 750 Ml,119.00
+39,Vino Tinto López De Haro Joven Esp 750 M,158.00
+40,Vino Tinto Ej Gallo Pinot Noir 750M,115.00
+41,Vino Tinto Ghost Pines Cabernet Sauvigno,483.00
+42,Vino Tinto Aphotic Red Estados Unidos 75,264.00
+43,Vino Tinto Cotes Du Rhône La Fiole 750Ml,157.00
+44,Vino Tinto Gran Vino Chateau Camou Mex,655.00
+45,Vino Tinto Montes Alpha Pinot Noir 750Ml,404.00
+46,Vino Tinto 4 Soles Semi Dulce Afrutado M,64.35
+47,Vino Tinto Sto Tomás Duetto Reserva 750,797.00
+48,Vino Tinto Sierra Blanca Cabernet Sua,136.00
+49,Vino Tinto Baron De Castillo Sweet Esp,75.00
+50,Vino Tinto Contraste Blend Mex 750,652.00
+51,Vino Tinto Aliwen Caber-Syr Ch 750 Ml,195.00
+52,Vino Tinto Aliwen Cab-Carm Chi 750 Ml,195.00
+53,Vino Tinto Dulzino Sweet Red Chi 750 Ml,80.00
+54,Vino Tinto Reserva Coto Tempranillo Esp,294.00
+55,Vino Tinto Crianza Coto Tempranillo Esp,180.00
+56,Vino Tinto Cvne Reserva Esp 750 Ml,329.00
+57,Vino Tinto Cvne Imperial Rva Esp 750 Ml,429.00
+58,Vino Tinto Izadi Reseva España 750 Ml,269.00
+59,Vino Tinto Pesquera Crianza 750Ml,415.00
+60,Vino Tinto Riunite Lambrusco Magnum Ital,242.00
+61,"Vino Tinto Pruno Tempranillo, Cab. Sauv.",305.00
+62,"Vino Tinto Promesa Carmenere, Cabernet,",75.00
+63,Vino Tinto Evohe Garnacha España 750 Ml,145.00
+64,Vino Tinto Lan A Mano España 750 Ml,1288.00
+65,Vino Tinto Macul Antiguas Rvas. Merlot C,219.00
+66,Vino Tinto Louis M Martini Napa Estados,742.00
+67,Vino Tinto Santa Alba Carmenere Reserva,265.00
+68,Vino Tinto Monteviña Joven Mex 750 Ml,113.00
+69,Vino Tinto Casa Grande Shi Mex 750 Ml,599.00
+70,Vino Tinto Hilo Negro Ricrac Mex 750 Ml,399.00
+71,Vino Tinto Vinicola Fraternidad Boceto M,460.00
+72,Vino Tinto Viñas Del Vero Luces Esp 750,60.00
+73,Vino Tinto Marques De Casa Concha Y Toro,385.00
+74,Vino Tinto Castillo Salobreña SA 750Ml,54.00
+75,Vino Tinto Berd La Chapelle St Emilion,427.00
+76,Vino Tinto Señorio de Orgaz Tempranillo,130.00
+77,Vino Tinto Château Canterane St Emilion,276.00
+78,Vino Tinto Château Piochet Bordeaux 750,115.00
+79,Vino Tinto Reserve Du Reverend Corbier,121.00
+80,Vino Tinto Château La Menotte Lalande,291.00
+81,Vino Tinto Don Luis Terra Mex 750 Ml,292.00
+82,Vino Tinto Chateauneuf Du Pa Syrah Fra,518.00
+83,Vino Tinto Astica Cabernet Arg 750 Ml,96.00
+84,Vino Tinto Barolo Docg Scanavino 750Ml,390.00
+85,Vino Tinto 12 Linajes Reserva 750Ml. Esp,431.00
+86,Vino Tinto Ghost Pines Zinfandel Estados,483.00
+87,Vino Tinto Carlo Rossi Fruty Red Estados,89.00
+88,Vino Tinto Château Laffitte Carcasset,904.00
+89,Vino Tinto Châteauneuf Du Pape Francia,855.00
+90,Vino Tinto Chateau Talbot 2009,2245.00
+91,Vino Tinto Chateau Petrus 2011,74000.00
+92,Vino Tinto Chateau Moution Rothschild,19159.00
+93,Vino Tinto Chateau Moution Rothschild 07,16360.00
+94,Vino Tinto Chateau Moution Rothschild 07,16369.00
+95,Vino Tinto Chateau Pontet Canet 2007,3511.00
+96,Vino Tinto Chateau Haut Brion 2007,18500.00
+97,Vino Tinto Chateau Cheval Blanc 2007,15079.00
+98,Vino Tinto Chateau Palmier 2007,9835.00
+99,Vino Tinto Reserva Magna Mexico 750,599.00
+100,Vino Tinto Viña Liceaga Gran Reserva Mer,680.00
+101,Vino Tinto Ensamble Arenal ba II 750Ml,425.00
+102,Vino Tinto Teziano 750 Ml,689.00
+103,Vino Tinto Quinta Monasterio Datum Mex,215.00
+104,Vino Tinto Sinergi Icaro 750Ml,852.00
+105,Vino Tinto Trapiche Medalla Cabernet,696.00
+106,Vino Tinto Luigi Bosca Malb Arg 375 Ml,246.00
+107,Vino Tinto Las Moras Negro 750Ml,382.00
+108,Vino Tinto Amarone Valpolicella,970.00
+109,Vino Tinto Petra 750 Ml,2372.00
+110,Vino Tinto Atrium Merlot Torres España,250.00
+111,Vino Tinto Tannug Kosher Tempranillo Esp,228.00
+112,Vino Tinto Cirsion Tempranillo Esp 750,5114.00
+113,Vino Tinto Cirsion Tempranillo Esp 750,5220.00
+114,Vino Tinto Roda I Reserva 8 Esp 750,1169.00
+115,Vino Tinto Cahteau Angelus 2007,15769.00

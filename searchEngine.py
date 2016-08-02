@@ -35,7 +35,7 @@ def chedrauiSearchService(searchString):
 	else:
 		pages = len(children)
 
-	#print pages
+	print "RESULTS CHEDRAUI: "
 	for page in range(1,pages):
 		opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj))
 		p = opener.open('http://www.chedraui.com.mx/index.php/interlomas/catalogsearch/result/?cat=0&p=' + str(page) + '&q=' + searchQuery)
@@ -53,15 +53,14 @@ def chedrauiSearchService(searchString):
 
 		print "Retreived data from page: " + str(page)
 
-	print "RESULTS CHEDRAUI: "
 	print "Total de productos: ", len(productNames)
 	print "Total de precios: ", len(allPrices)
 
-	df = pd.DataFrame(productNames, columns=['Producto'])
-	df['Precio']=[Decimal(element.strip("$")) for element in allPrices]
-	df.to_csv('searches/outchedraui.csv', encoding='utf-8')
-	print df
-	print type(df['Precio'][0])
+	dfChedraui = pd.DataFrame(productNames, columns=['Producto'])
+	dfChedraui['Precio']=[Decimal(element.strip("$").replace(",", "")) for element in allPrices]
+	dfChedraui.to_csv('searches/outchedraui.csv', encoding='utf-8')
+	print dfChedraui
+	print type(dfChedraui['Precio'][0])
 
 
 def lacomerSearchService (searchString):
@@ -109,12 +108,12 @@ def lacomerSearchService (searchString):
 	df['Marca']=[element.lower() for element in brandNamesList]
 	#df['Precio']=allPricesList
 
-	df1 = pd.DataFrame()
-	df1['Producto'] = df['Producto'].map(str) + " " + df['Presentación'].map(str) + " " + df['Marca']
-	df1['Precio'] = allPricesList
-	print df1
-	print type(df1['Precio'][0])
-	df1.to_csv('searches/outlacomer.csv', encoding='utf-8')
+	dfLacomer = pd.DataFrame()
+	dfLacomer['Producto'] = df['Producto'].map(str) + " " + df['Presentación'].map(str) + " " + df['Marca']
+	dfLacomer['Precio'] = allPricesList
+	print dfLacomer
+	#print type(dfLacomer['Precio'][0])
+	dfLacomer.to_csv('searches/outlacomer.csv', encoding='utf-8')
 
 
 def superamaSearchService(searchString):
@@ -141,16 +140,17 @@ def superamaSearchService(searchString):
 		allPrices.append(prices)
 		#print cleanNames
 
-	df = pd.DataFrame(productNames, columns=['Producto'])
-	df['Precio']=[Decimal(element.strip("$")) for element in allPrices]
+	dfSuperama = pd.DataFrame(productNames, columns=['Producto'])
+	dfSuperama['Precio']=[Decimal(element.strip("$").replace(",", "")) for element in allPrices]
 
-	print df
-	print type(df['Precio'][0])
-	df.to_csv('searches/outsuperama.csv', encoding='utf-8')
+	print dfSuperama
+	print type(dfSuperama['Precio'][0])
+	dfSuperama.to_csv('searches/outsuperama.csv', encoding='utf-8')
 
 def searchService(searchString):
 	superamaSearchService(searchString)
 	lacomerSearchService (searchString)
 	chedrauiSearchService(searchString)
 
-searchService('leche lala deslactosada')
+searchService('vino tinto')
+
