@@ -158,12 +158,11 @@ def superamaSearchService(searchString):
 	return dfSuperama
 
 def searchService(searchString):
-	#TODO: REMOVE INDEX (STORE NAME) FROM HERE AND ADD IT FROM EACH DATA FRAME CREATION
 	dfMasterData = {'Superama': superamaSearchService(searchString), 'La Comer': lacomerSearchService (searchString), 'Chedraui': chedrauiSearchService(searchString)}
 	dfMasterResult = pd.concat(dfMasterData)
 	print dfMasterResult
 	dfMasterResult.to_csv('searches/outMasterResult.csv', encoding='utf-8')
 
 
-searchService('oaxaca los volcanes')
+searchService('leche light santa clara')
 
