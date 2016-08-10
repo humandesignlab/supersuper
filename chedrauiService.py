@@ -45,14 +45,18 @@ def searchService(searchString):
 			prices = price.find_all('span', class_='price')
 			allPrices.append(prices[-1].find(text=True).strip())
 
+
 		print "Retreived data from page: " + str(page)
 
 	print "Total de productos: ", len(productNames)
 	print "Total de precios: ", len(allPrices)
+	print productNames
+	print allPrices
+	print dict(zip(productNames, allPrices))
 
-	df = pd.DataFrame(productNames, columns=['Producto'])
-	df['Precio']=allPrices
-	df.to_csv('searches/outchedraui.csv', encoding='utf-8')
-	print df
+	# df = pd.DataFrame(productNames, columns=['Producto'])
+	# df['Precio']=allPrices
+	# df.to_csv('searches/outchedraui.csv', encoding='utf-8')
+	# print df
 
 searchService('jabon zote')

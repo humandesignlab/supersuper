@@ -39,8 +39,6 @@ def chedrauiSearchService(searchString):
 	except Exception, e:
 		print "No products found in Chedraui!"
 
-	
-
 	print "RESULTS CHEDRAUI: "
 	for page in range(1,pages):
 		opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj))
@@ -59,14 +57,12 @@ def chedrauiSearchService(searchString):
 
 		print "Retreived data from page: " + str(page)
 
-	print "Total de productos: ", len(productNames)
-	print "Total de precios: ", len(allPrices)
+	print "Number of products: ", len(productNames)
+	print "Number of prices: ", len(allPrices)
 
 	dfChedraui = pd.DataFrame(productNames, columns=['Producto'])
 	dfChedraui['Precio']=[Decimal('%.2f' % float(element.strip("$").replace(",", ""))) for element in allPrices]
-	dfChedraui.to_csv('searches/outchedraui.csv', encoding='utf-8')
-	#print dfChedraui
-	#print type(dfChedraui['Precio'][0])
+	#dfChedraui.to_csv('searches/outchedraui.csv', encoding='utf-8')
 	return dfChedraui
 
 
@@ -76,7 +72,6 @@ def lacomerSearchService (searchString):
 	presentation = []
 	brandNames = []
 	allPrices = []
-	#searchQuery = 'jamón serrano'
 	req = urllib2.Request("http://www.lacomer.com.mx/GSAServices/searchArt?col=lacomer_2&orden=-1&p=1&pasilloId=false&s="+searchQuery+"&succId=14")
 
 	opener = urllib2.build_opener()
@@ -85,13 +80,12 @@ def lacomerSearchService (searchString):
 	numpages = json1['numpages'] + 1
 
 	print "RESULTS LA COMER: "
-	print 'number of pages: ', numpages
-	print 'number of products: ', json1['total']
+	print 'Number of pages: ', numpages
+	print 'Number of products: ', json1['total']
 
 	for page in range(0,numpages):
 		data = opener.open("http://www.lacomer.com.mx/GSAServices/searchArt?col=lacomer_2&orden=-1&p="+str(page)+"&pasilloId=false&s="+searchQuery+"&succId=14")
 		completeJson = json.loads(data.read())
-		#print page, completeJson['res']
 
 		names = [lin['artDes'] for lin in completeJson['res']]
 		productNames.append(names)
@@ -114,14 +108,11 @@ def lacomerSearchService (searchString):
 	df['Producto'] = productNamesList
 	df['Presentación']=[element.lower() for element in presentationList]
 	df['Marca']=[element.lower() for element in brandNamesList]
-	#df['Precio']=allPricesList
 
 	dfLacomer = pd.DataFrame()
 	dfLacomer['Producto'] = df['Producto'].map(str) + " " + df['Presentación'].map(str) + " " + df['Marca']
 	dfLacomer['Precio'] = [Decimal('%.2f' % element) for element in allPricesList]
-	#print dfLacomer
-	#print type(dfLacomer['Precio'][0])
-	dfLacomer.to_csv('searches/outlacomer.csv', encoding='utf-8')
+	#dfLacomer.to_csv('searches/outlacomer.csv', encoding='utf-8')
 	return dfLacomer
 
 
@@ -130,7 +121,6 @@ def superamaSearchService(searchString):
 	productNames = []
 	brandNames = []
 	allPrices = []
-	#searchTerm = 'jamón serrano'
 	searchQuery = searchTerm.replace(" ", "+")
 	req = urllib2.Request("http://www.superama.com.mx/buscador/resultado?busqueda="+searchQuery)
 
@@ -147,14 +137,10 @@ def superamaSearchService(searchString):
 		productNames.append(cleanNames)
 		prices = json1['Products'][item]['Precio']
 		allPrices.append(prices)
-		#print cleanNames
 
 	dfSuperama = pd.DataFrame(productNames, columns=['Producto'])
 	dfSuperama['Precio']=[Decimal('%.2f' % float(element.strip("$").replace(",", ""))) for element in allPrices]
-
-	#print dfSuperama
-	#print type(dfSuperama['Precio'][0])
-	dfSuperama.to_csv('searches/outsuperama.csv', encoding='utf-8')
+	#dfSuperama.to_csv('searches/outsuperama.csv', encoding='utf-8')
 	return dfSuperama
 
 def searchService(searchString):
@@ -162,6 +148,7 @@ def searchService(searchString):
 	dfMasterResult = pd.concat(dfMasterData)
 	print dfMasterResult
 	dfMasterResult.to_csv('searches/outMasterResult.csv', encoding='utf-8')
+	print dfMasterResult.reset_index().to_json(orient='records')
 
 
 searchService('leche light santa clara')
