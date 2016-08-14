@@ -1,7 +1,30 @@
-,,Producto,Precio
-Chedraui,0,Leche Santa Clara Deslactosada Light 1 L,18.00
-Chedraui,1,Leche Santa Clara Light 1 Lt,17.00
-La Comer,0,Leche ultrapasteurizada des. light   santa clara,17.00
-La Comer,1,Leche ultrapasteurizada light santa clara,16.00
-Superama,0,leche santa clara  light 1 l,17.00
-Superama,1,leche santa clara  light  deslactosada 1 l,18.00
+Tienda,ID,Producto,Precio
+Superama,0,cereal kelloggs zucaritas 840 g,59.50
+Superama,1,cereal kelloggs zucaritas 490 g,44.90
+Superama,2,cereal kelloggs zucaritas nutri crisp 470 g,45.90
+Superama,3,cereal kelloggs zucaritas power balls 430 g,45.50
+Superama,4,barras kelloggs zucaritas con cobertura sabor chocolate 6 pzas de 21 g c/u,28.30
+La Comer,0,Zucaritas   zucaritas,4.50
+La Comer,1,Choco zucaritas   zucaritas,4.50
+La Comer,2,Zucaritas kelloggs hojuelas de maiz escarchadas con azucar zucaritas,13.95
+La Comer,3,Zucaritas   zucaritas,31.40
+La Comer,4,Choco zucaritas con malvaviscos zucaritas,68.80
+La Comer,5,Zucaritas   zucaritas,43.90
+La Comer,6,Zucaritas nutri crisp   zucaritas,45.50
+La Comer,7,Zucaritas   zucaritas,45.90
+La Comer,8,Barras zucaritas   zucaritas,31.90
+La Comer,9,Zucaritas   zucaritas,4.50
+La Comer,10,Choco zucaritas   zucaritas,4.50
+La Comer,11,Zucaritas kelloggs hojuelas de maiz escarchadas con azucar zucaritas,13.95
+La Comer,12,Zucaritas   zucaritas,31.40
+La Comer,13,Choco zucaritas con malvaviscos zucaritas,68.80
+La Comer,14,Zucaritas   zucaritas,43.90
+La Comer,15,Zucaritas nutri crisp   zucaritas,45.50
+La Comer,16,Zucaritas   zucaritas,45.90
+La Comer,17,Barras zucaritas   zucaritas,31.90
+Chedraui,0,Cereal Kelloggs Zucaritas 300 G,32.90
+Chedraui,1,Cereal Kelloggs Zucaritas 490 G,43.90
+Chedraui,2,Cereal Kelloggs Zucaritas 840 G,42.90
+Chedraui,3,"Barra Kelloggs Cja, Zucaritas",22.90
+Chedraui,4,Cuadritos Cubox Zucaritas de Cereal 5 pz,39.90
+Chedraui,5,Cereal Kelloggs Chocozucaritas 700 G,70.00

@@ -144,12 +144,14 @@ def superamaSearchService(searchString):
 	return dfSuperama
 
 def searchService(searchString):
-	dfMasterData = {'Superama': superamaSearchService(searchString), 'La Comer': lacomerSearchService (searchString), 'Chedraui': chedrauiSearchService(searchString)}
-	dfMasterResult = pd.concat(dfMasterData)
+	#dfMasterData = {'Superama': superamaSearchService(searchString), 'La Comer': lacomerSearchService (searchString), 'Chedraui': chedrauiSearchService(searchString)}
+	dfMasterResult = pd.concat([superamaSearchService(searchString), lacomerSearchService(searchString), chedrauiSearchService(searchString)], keys=['Superama', 'La Comer', 'Chedraui'])
+	dfMasterResult.index.levels[0].name = 'Tienda'
+	dfMasterResult.index.levels[1].name = 'ID'
 	print dfMasterResult
 	dfMasterResult.to_csv('searches/outMasterResult.csv', encoding='utf-8')
 	print dfMasterResult.reset_index().to_json(orient='records')
 
 
-searchService('leche light santa clara')
+searchService('zucaritas')
 
