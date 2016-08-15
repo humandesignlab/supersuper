@@ -143,9 +143,37 @@ def superamaSearchService(searchString):
 	#dfSuperama.to_csv('searches/outsuperama.csv', encoding='utf-8')
 	return dfSuperama
 
+def walmartSearchService(searchString):
+	searchTerm = searchString
+	productNames = []
+	brandNames = []
+	allPrices = []
+	searchQuery = searchTerm.replace(" ", "%20")
+	req = urllib2.Request("https://www.walmart.com.mx/super/WebControls/hlSearch.ashx?Text="+searchQuery)
+
+	opener = urllib2.build_opener()
+	f = opener.open(req)
+	json1 = json.loads(f.read(), 'ISO-8859-1')
+
+	print "RESULTS WALMART: "
+	print 'Number of products: ', len(json1['Products'])
+
+	for item in range(0, len(json1['Products'])):
+		names = json1['Products'][item]['Description']
+		cleanNames = HTMLEntitiesToUnicode(names).encode('utf-8')
+		productNames.append(cleanNames)
+		prices = json1['Products'][item]['Precio']
+		allPrices.append(prices)
+
+	dfWalmart = pd.DataFrame(productNames, columns=['Producto'])
+	dfWalmart['Precio']=[Decimal('%.2f' % float(element.strip("$").replace(",", ""))) for element in allPrices]
+	#dfSuperama.to_csv('searches/outsuperama.csv', encoding='utf-8')
+	return dfWalmart
+
+#TODO: Fix unicode bug in JSON result
 def searchService(searchString):
 	#dfMasterData = {'Superama': superamaSearchService(searchString), 'La Comer': lacomerSearchService (searchString), 'Chedraui': chedrauiSearchService(searchString)}
-	dfMasterResult = pd.concat([superamaSearchService(searchString), lacomerSearchService(searchString), chedrauiSearchService(searchString)], keys=['Superama', 'La Comer', 'Chedraui'])
+	dfMasterResult = pd.concat([superamaSearchService(searchString), lacomerSearchService(searchString), chedrauiSearchService(searchString), walmartSearchService(searchString)], keys=['Superama', 'La Comer', 'Chedraui', 'Walmart'])
 	dfMasterResult.index.levels[0].name = 'Tienda'
 	dfMasterResult.index.levels[1].name = 'ID'
 	print dfMasterResult
@@ -153,5 +181,5 @@ def searchService(searchString):
 	print dfMasterResult.reset_index().to_json(orient='records')
 
 
-searchService('zucaritas')
+searchService('papel higienico')
 

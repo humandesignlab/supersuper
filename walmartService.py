@@ -26,14 +26,14 @@ req = urllib2.Request("https://www.walmart.com.mx/super/WebControls/hlSearch.ash
 
 opener = urllib2.build_opener()
 f = opener.open(req)
-json1 = json.loads(f.read())
+json1 = json.loads(f.read(), 'ISO-8859-1')
 
 print "RESULTS WALMART: "
 print 'Number of products: ', len(json1['Products'])
 
 for item in range(0, len(json1['Products'])):
 	names = json1['Products'][item]['Description']
-	cleanNames = HTMLEntitiesToUnicode(names)
+	cleanNames = HTMLEntitiesToUnicode(names).encode('utf-8')
 	productNames.append(cleanNames)
 	prices = json1['Products'][item]['Precio']
 	allPrices.append(prices)
@@ -41,6 +41,6 @@ for item in range(0, len(json1['Products'])):
 dfWalmart = pd.DataFrame(productNames, columns=['Producto'])
 dfWalmart['Precio']=[Decimal('%.2f' % float(element.strip("$").replace(",", ""))) for element in allPrices]
 #dfSuperama.to_csv('searches/outsuperama.csv', encoding='utf-8')
-print dfSuperama
+print dfWalmart
 
 
