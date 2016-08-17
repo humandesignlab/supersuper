@@ -10,11 +10,18 @@ import json
 from cookielib import CookieJar
 import pandas as pd
 from decimal import *
+import re
 
 
 def HTMLEntitiesToUnicode(text):
     text = unicode(BeautifulStoneSoup(text, convertEntities=BeautifulStoneSoup.ALL_ENTITIES))
     return text
+
+def unicodize(seg):
+    if re.match(r'\\u[0-9a-f]{4}', seg):
+        return seg.decode('unicode-escape')
+
+    return seg.decode('utf-8')
 
 def chedrauiSearchService(searchString):
 
@@ -176,11 +183,13 @@ def searchService(searchString):
 	dfMasterResult = pd.concat([superamaSearchService(searchString), lacomerSearchService(searchString), chedrauiSearchService(searchString), walmartSearchService(searchString)], keys=['Superama', 'La Comer', 'Chedraui', 'Walmart'])
 	dfMasterResult.index.levels[0].name = 'Tienda'
 	dfMasterResult.index.levels[1].name = 'ID'
-	print dfMasterResult 
+	#print dfMasterResult 
 	dfMasterResult.to_csv('searches/outMasterResult.csv', encoding='utf-8')
 	jsonResult = dfMasterResult.reset_index().to_json(orient='records')
-	print jsonResult
+	replacedJsonResult = (unicodize(seg) for seg in re.split(r'(\\u[0-9a-f]{4})',jsonResult))
+	jsonCleanResult = ('      '.join(replacedJsonResult))
+	print jsonCleanResult
 
 
-searchService('papel higienico')
+searchService('moño')
 

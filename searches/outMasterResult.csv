@@ -1,185 +1,39 @@
 Tienda,ID,Producto,Precio
-Superama,0,papel higiénico kleenex cottonelle unique 32 rollos,147.00
-Superama,1,papel higiénico kleenex cottonelle unique 18 rollos,90.50
-Superama,2,papel higiénico kleenex cottonelle bio compact 8 rollos con 408 hojas dobles,64.99
-Superama,3,papel higiénico regio luxury almond touch triple hoja 18 pzas,110.00
-Superama,4,papel hiiénico elite triplex shea butter 18 pzas,89.00
-Superama,5,papel higiénico kleenex cottonelle gentle care 12 rollos,63.50
-Superama,6,papel higiénico regio luxury con un toque de almendra 4 rollos,23.00
-Superama,7,papel higiénico great value  premium 32 rollos,115.00
-Superama,8,servilletas de papel great value premium 500 pzas,35.50
-Superama,9,toallas de papel elite megaroll 1 rollo con 180 hojas,14.89
-Superama,10,papel higiénico kleenex cottonelle prestige 4 rollos,38.09
-Superama,11,papel higiénico regio opción verde 6 pzas,47.50
-Superama,12,servilletas great value  premium 250 pzas,21.00
-Superama,13,toallas de papel white cloud  1 rollo,34.90
-Superama,14,papel higiénico kleenex cottonelle fresh 42 rollos,37.70
-Superama,15,papel higiénico great value  premium 4 rollos 320 hojas dobles,22.50
-Superama,16,papel higiénico húmedo kleenex cottonelle fresh 42 toallas,56.00
-Superama,17,servilletas elite 400 pzas,30.50
-Superama,18,servilletas kleenex class 200 pzas,64.50
-Superama,19,servilletas kleenex elegance 100 pzas,64.50
-Superama,20,servilletas pétalo  hoja sencilla 450 pzas,37.50
-Superama,21,servilletas unique  balloon birthday 16 pzas,19.00
-Superama,22,servilletas unique  happy birthday 16 pzas,20.00
-Superama,23,servilletas unique  para baby shower 16 pzas,18.00
-Superama,24,toallas de cocina great value  1 rollo con 85 hojas,20.90
-Superama,25,toallas de papel bounty  55 hojas dobles 1 paquete con 2 pzas,82.00
-Superama,26,servitoalla kleenex duramax 1 rollo,41.10
-Superama,27,servilletas de coctel unique  party style 25.4 cm x 25.4 cm 16 pzas,22.01
-Superama,28,toallas de cocina great value  2 rollos con 85 hojas c/u,39.90
-Superama,29,pañuelos desechables kleenex  90 hojas dobles,15.69
-Superama,30,pañuelos desechables kleenex selection cubo 90 hojas dobles,16.50
-Superama,31,pañuelos desechables elite  happy aroma coco y piña 6 paquetes con 10 pzas c/u,16.00
-Superama,32,pañuelos desechables elite  relax aroma pera y manzana 6 paquetes con 10 pzas c/u,16.00
-Superama,33,pañuelos desechables kleenex cold care con aceite humectante 66 pzas,29.35
-Superama,34,pañuelos desechables kleenex  ahorrapack 2 cajas con 180 pzas c/u,61.00
-Superama,35,pañuelos desechables kleenex ahorrapack 3 pzas con 90 pzas c/u,40.00
-Superama,36,pañuelos desechables kleenex boutique 3 paquetes con 70 pzas c/u,35.90
-Superama,37,pañuelos desechables kleenex cold care antiviral 80 pzas,28.50
-Superama,38,pañuelos desechables kleenex travelers 2 pzas con 40 pzas c/u,16.90
-La Comer,0,Papel higienico aires de frescura 32's   regio,110.00
-La Comer,1,Papel higienico rendimax manzanilla 12's 500 h. petalo,74.00
-La Comer,2,Papel higienico r3 almendras 4's   regio,23.00
-La Comer,3,Papel higienico rendimax manzanilla 4's 500 h. petalo,24.00
-La Comer,4,Papel higienico r3 almendras 18's 230 ht regio,115.00
-La Comer,5,Papel higienico manzanilla 32's   regio,140.00
-La Comer,6,Papel higienico suavel 32's   suavel,91.79
-La Comer,7,Papel higienico duo 6's   elite,25.90
-La Comer,8,Papel higienico humedo fresh 42's   kleenex,45.60
-La Comer,9,Papel higienico aires de frescura 32's   regio,110.00
-La Comer,10,Papel higienico rendimax manzanilla 12's 500 h. petalo,74.00
-La Comer,11,Papel higienico r3 almendras 4's   regio,23.00
-La Comer,12,Papel higienico rendimax manzanilla 4's 500 h. petalo,24.00
-La Comer,13,Papel higienico r3 almendras 18's 230 ht regio,115.00
-La Comer,14,Papel higienico manzanilla 32's   regio,140.00
-La Comer,15,Papel higienico suavel 32's   suavel,91.79
-La Comer,16,Papel higienico duo 6's   elite,25.90
-La Comer,17,Papel higienico humedo fresh 42's   kleenex,45.60
-La Comer,18,Papel higienico celeste h.d   elite,25.29
-La Comer,19,Papel higienico triplex 32's   elite,131.50
-La Comer,20,Papel higienico opcion verde 6's   regio,49.98
-La Comer,21,Papel higienico cottonelle prestige 12's   kleenex,108.73
-La Comer,22,Papel higienico cottonelle prestige 4's   kleenex,35.92
-La Comer,23,Papel higienico cherry blossom 4's   elite,24.50
-La Comer,24,Papel higienico cherry blossom 9's   elite,51.70
-La Comer,25,Papel higienico 35mts duo   elite,20.00
-La Comer,26,Papel higienico lonvly 4 s   lovly,21.00
-La Comer,27,Papel higienico rinde mas 12s   regio,57.00
-La Comer,28,Papel higienico big regio r3 12+4 rollos   regio,130.00
-La Comer,29,Papel higienico cottonelle 32's kleenex,180.00
-La Comer,30,Papel higienico   vogue,9.34
-La Comer,31,Higienicos papel higienico medio 216 hojas suavel,13.00
-La Comer,32,Papel higienico 4 s aroma manzanilla 455 h. vogue,35.50
-La Comer,33,Papel higienico 4 rollos de 285 hojas   ke precio ,11.90
-La Comer,34,Higienicos papel higienico medio jumbo impreso  360 hojas suavel,16.60
-La Comer,35,Regio rinde mas papel higienico 10x4s 40 10x4s 400 hd regio,26.53
-La Comer,36,Higienico p. ultra resisitente mz jbo 4 pza 360 h. petalo,31.00
-La Comer,37,Higienico kleenex 12' s unique 192 h kleenex,65.00
-La Comer,38,Higienico 12 rollos 200 hd ke precio ,27.50
-La Comer,39,Higienico humedo cottonelle fresh tina 42 pza kleenex,60.00
-La Comer,40,Higienico suavel 24 pza 200 h. suavel,66.00
-La Comer,41,Higienico suavel 12 pza 200 h.   suavel,34.00
-La Comer,42,Higienico kleenex mega jbo 1pza 455 h. kleenex,10.81
-La Comer,43,Higienico delsey max 4 pza 377 h. delsey,20.58
-La Comer,44,Higienico petalo ultracare jbo 4 pza 300 h. petalo,23.41
-La Comer,45,Higienico 250 hd 12 rollos   golden hills,54.90
-La Comer,46,Higienico 250 hd 4 rollos   golden hills,18.60
-La Comer,47,Higienico kleenex mega jbo 4 pza 455 h. kleenex,31.50
-La Comer,48,Higienico petalo ultracare 32 pza 190 h. petalo,104.01
-La Comer,49,Panuelos 70 s pauelo kleenex,37.00
-La Comer,50,Panuelo desechable selection kleenex,22.00
-La Comer,51,Panuelos faciales   kleenex,49.00
-La Comer,52,Ph ultra strong plus 352 hojas dobles charmin,133.00
-La Comer,53,Panuelo desechable sella pack 8 pzas kleenex,27.00
-La Comer,54,Panuelo desechable cold car lotion kleenex,31.00
-La Comer,55,Faciales hogar   suavel,20.50
-La Comer,56,Panuelo desechable anti viral   kleenex,28.00
-La Comer,57,Ph ultra soft 308 hojas dobles charmin,169.00
-La Comer,58,Ph mega ultra soft 352 hojas dobles charmin,133.00
-La Comer,59,Panuelos faciales kleenex,51.00
-La Comer,60,Ph ultra soft 308 hojas dobles charmin,245.00
-La Comer,61,Ph ultra strong 308 hojas dobles charmin,245.00
-La Comer,62,Huggies kids pauelos humedos repuesto repuesto huggies,31.00
-La Comer,63,Faciales portables mini kleenex,11.60
-La Comer,64,Panuelo desechable cold car menta kleenex,37.00
-La Comer,65,Faciales hogar pauelo suavel,10.80
-La Comer,66,Faciales portables bolsillo suavel,7.70
-La Comer,67,Ph ultra strong mega 308 hojas dobles charmin,169.00
-La Comer,68,Panuelos desechables cold care con manzanilla kleenex,31.50
-La Comer,69,Panuelo desechable hoja doble kleenex,35.50
-La Comer,70,Panuelos faciales bote kleenex,14.20
-La Comer,71,Panuelos faciales doble hoja   alokosay,19.50
-Chedraui,0,Papel Higienico Regio Opcion Verde 6 Pz,46.90
-Chedraui,1,Papel Higienico Cottonelle Gentle Care 4,28.00
-Chedraui,2,Papel Higienico Chedraui Clasico 4 Rollo,16.50
-Chedraui,3,Papel Higienico Kleenex Cottonelle Life,105.00
-Chedraui,4,Papel Higienico Kleenex Cottonelle Prest,37.00
-Chedraui,5,Papel Higienico Kleenex Cottonelle Prest,113.00
-Chedraui,6,Papel Higienico Charmin Ultra Strong 6,177.00
-Chedraui,7,Papel Higienico Charmin Ultra Strong 12,187.00
-Chedraui,8,Papel Higienico Charmin Ultra Strong 4,133.00
-Chedraui,9,Papel Higienico Elite Color 4 Piezas,12.20
-Chedraui,10,Papel Higienico Charmin Ultra Soft 12 H,187.00
-Chedraui,11,Papel Higienico Charmin Ultra Soft Mega,245.00
-Chedraui,12,Papel Higienico Charmin Ultra Soft 4 Pz,133.00
-Chedraui,13,Papel Higienico Elite Duo Maxima Suavida,24.90
-Chedraui,14,Papel Higienico Elite Triplex 32 R Hojas,126.90
-Chedraui,15,Papel Higienico Elite Triplex 8 Rollos H,52.90
-Chedraui,16,papel Higienico Cottonell Fresh Humedo,39.00
-Chedraui,17,P Higienico Kleenex Cottonelle 12Pz,59.00
-Chedraui,18,P Higienico Suavel 24Pz,73.00
-Chedraui,19,P Higienico Regio Rinde+ 4Pzs,25.00
-Chedraui,20,P Higienico Regio R3 Big 12Pzs,127.00
-Chedraui,21,P Higienico Regio Rinde+ 12Pz,51.50
-Chedraui,22,P Higienico Petalo Rmax 4Pzs,28.00
-Chedraui,23,P Higienico Petalo Ucare 4Pzs,28.00
-Chedraui,24,P Hig Regio Almond Touch 4 Piezas,21.50
-Chedraui,25,P Hig Regio Aires De Frescura 32 Piezas,105.00
-Chedraui,26,Pap Higien Regio R3 Almond 18Pz,89.00
-Chedraui,27,Pap Higien Petalo Ultra Care 6 Rollos +,28.00
-Chedraui,28,Pap Higien Elite Ultra Spa Cherry 9 Roll,45.90
-Chedraui,29,Phig Hum Cottonelle Fresh Tina 42 Pz,55.00
-Chedraui,30,Papel Higienico Suavel Colores 32 Rollos,99.00
-Chedraui,31,Papel Higienico Regio Manzanilla Care 32,138.00
-Chedraui,32,Papel Higienico Keenex Cottonelle Unique,22.90
-Chedraui,33,Papel Higienico Kleenex Cottonelle Gentl,63.50
-Chedraui,34,P Higienico Suavel 200H 12Pzs,35.00
-Chedraui,35,P Higienico Chedraui Clasico 200H 12R,29.00
-Chedraui,36,P Higienico Selecto 300H 4R,21.90
-Chedraui,37,P Higienico Petalo Ucare 32Pz,105.00
-Chedraui,38,P Higienico Petalo Rmax 12Pzs,62.50
-Chedraui,39,P Higienico Suavel 4Pzs,9.90
-Chedraui,40,P Higienico Suavel Jbo 4Pzs,15.00
-Chedraui,41,P Higienico Delsey Jbo 4Pzs,20.00
-Chedraui,42,Papel Higien Chedraui Gigante 1R 300 Hd,3.50
-Chedraui,43,Pap Higien Cottonelle Unique Fresh 32Pz,147.00
-Walmart,0,papel higiénico suavel  con aroma 32 pzas,90.50
-Walmart,1,papel higiénico elite dúo 4 pzas,20.00
-Walmart,2,papel higiénico kleenex cottonelle bio compact 8 rollos con 408 hojas dobles,63.00
-Walmart,3,papel higiénico great value  original 18 rollos,71.00
-Walmart,4,papel higiénico kleenex cottonelle con extracto de algodón y ámbar 18 rollos,87.50
-Walmart,5,papel higiénico pétalo rendimax 12 rollos con 350 hojas dobles,73.00
-Walmart,6,papel higiénico regio luxury almond touch triple hoja 18 pzas,109.00
-Walmart,7,papel higiénico premier megaroll 4 rollos,19.90
-Walmart,8,papel higiénico level  premium 18 pzas,68.00
-Walmart,9,papel higiénico aurrera  1 pza,5.50
-Walmart,10,papel higiénico regio r3 big 8 pzas,57.50
-Walmart,11,papel higiénico regio luxury con un toque de almendra 4 rollos,23.00
-Walmart,12,papel higiénico húmedo kleenex cottonelle fresh 42 toallas,54.50
-Walmart,13,papel higiénico ecopel premiere mega roll 9 pzas,43.90
-Walmart,14,papel higiénico great value  premium 4 rollos 320 hojas dobles,22.00
-Walmart,15,papel higiénico suavel  jumbo 4 rollos con 300 hojas dobles,15.00
-Walmart,16,papel higiénico kleenex cottonelle unique 32 rollos,147.00
-Walmart,17,papel higiénico great value  original 4 pzas,17.00
-Walmart,18,papel higiénico level  max premium 4 pzas,21.00
-Walmart,19,papel higiénico kleenex cottonelle unique 18 rollos,88.00
-Walmart,20,papel higiénico delsey max mega jumbo 4 pzas,23.20
-Walmart,21,papel higiénico regio  12 rollos grandes rinde más,54.50
-Walmart,22,papel higiénico regio opción verde 6 pzas,46.90
-Walmart,23,papel higiénico regio  manzanilla care 32 pzas,138.00
-Walmart,24,papel higiénico kleenex cottonelle prestige 4 rollos,37.00
-Walmart,25,papel higiénico great value  premium 32 rollos,115.00
-Walmart,26,papel higiénico elite  triplex shea butter 18 pzas,98.00
-Walmart,27,papel higiénico kleenex cottonelle prestige 12 pzas,113.00
-Walmart,28,papel higiénico regio  just 1 hojas cuádruples 6 pzas,54.00
+Superama,0,chaleco para perro royal  chico con moño 1 pza,199.00
+Superama,1,chaleco para perro royal  mediano con moño 1 pza,199.00
+Superama,2,moño para regalo hallmark  de cascada azul 1 pieza,17.01
+Superama,3,sopa de moño italpasta  200 g,4.20
+Superama,4,sopa de moño la moderna  200 g,5.20
+La Comer,0,Pasta para sopa mono barilla,47.00
+Chedraui,0,Donas Goody Para Cabello B&W Moño 2Pza M,34.45
+Chedraui,1,Moño Rehilete Janel Holografico,6.80
+Chedraui,2,Moño Aileen Paq Med,9.90
+Chedraui,3,Moño Aileen Paq Gde,15.65
+Chedraui,4,Clip Goody Para Cabello Moño Y Flor 2 Pz,43.26
+Chedraui,5,Pinzas Touch Para Cabello Moño 1 Pz Mora,10.90
+Chedraui,6,Pinzas Touch Para Cabello Moño 1 Pz Punt,10.90
+Chedraui,7,Sujetador Touch Para Cabello Moño 1 Pz A,10.90
+Chedraui,8,Diadema Touch Para Cabello Moño 1 Pz Caf,10.90
+Chedraui,9,Banda Sujetadora Touch Para Cabello Moño,10.90
+Chedraui,10,Pasta p Sopa Chedraui moño 200 Gr,2.80
+Chedraui,11,Broche Barbie Para Cabello Moño 2 pz Va,19.90
+Chedraui,12,"Toalla Medio Baño La Heredera George, Mo",99.90
+Walmart,0,sopa de moño la moderna  200 g,5.10
+Walmart,1,sopa de moño italpasta  200 g,4.10
+Walmart,2,chaleco con moño para perro royal talla grande,199.00
+Walmart,3,moño para regalo hallmark  de cascada azul 1 pza,16.50
+Walmart,4,moño para regalo hallmark  de cascada azul 1 pieza,16.50
+Walmart,5,moño para regalo janel  tipo estrella grande 1 pza,12.50
+Walmart,6,moño para regalo janel  tipo estrella cielo jumbo 1 pza,12.50
+Walmart,7,moño para regalo janel  tipo estrella krystal morado jumbo 1 pza,12.50
+Walmart,8,moño para regalo janel  tipo estrella grande 1 pza,19.90
+Walmart,9,moño para regalo janel  tipo estrella krystal rojo  jumbo 1 pza,12.50
+Walmart,10,moño para regalo janel  tipo estrella krystal rosa grande 1 pza,12.50
+Walmart,11,moño para regalo janel  tipo estrella krystal naranja jumbo 1 pza,12.50
+Walmart,12,moño para regalo estrella celosa  azul  metálico 1 pza,12.50
+Walmart,13,moño para regalo janel  de estrella blanco jumbo 1 pza,12.50
+Walmart,14,moño para regalo janel  tipo estrella verde limón jumbo 1 pza,12.50
+Walmart,15,moño para regalo celosa  cairel krystal color verde limón 1 pza,12.50
+Walmart,16,moño para regalo celosa  cairel krystal color anaranjado 1 pza,12.50
+Walmart,17,moño para regalo celosa  cairel krystal color amarillo 1 pza,12.50
+Walmart,18,chaleco para perro royal  mediano con moño 1 pza,199.00
