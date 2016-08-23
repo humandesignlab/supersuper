@@ -187,7 +187,7 @@ def searchService(searchString):
 	dfMasterResult.to_csv('searches/outMasterResult.csv', encoding='utf-8')
 	jsonResult = dfMasterResult.reset_index().to_json(orient='records')
 	replacedJsonResult = (unicodize(seg) for seg in re.split(r'(\\u[0-9a-f]{4})',jsonResult))
-	jsonCleanResult = ('      '.join(replacedJsonResult))
+	jsonCleanResult = (''.join(replacedJsonResult))
 	print jsonCleanResult
 
 
